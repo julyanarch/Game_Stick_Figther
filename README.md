@@ -4,7 +4,7 @@
 
 **Stick Fighter** é um jogo de luta 2D desenvolvido em **Python 3.12** utilizando a biblioteca **Pygame 2.5.2**, como projeto acadêmico do **1º semestre** do curso de **Análise e Desenvolvimento de Sistemas (ADS)**.
 
-Inspirado no clássico **Street Fighter**, o jogo traz personagens no estilo **stickman**, onde dois jogadores se enfrentam até que um deles vença. Todos os elementos visuais — personagens, cenários, interface e até o site fictício relacionado ao projeto — foram desenvolvidos de forma **100% autoral**.
+Inspirado no clássico **Street Fighter**, o jogo traz personagens no estilo **stickman**, onde dois jogadores se enfrentam até que um deles vença. Todos os elementos visuais — personagens, interface e até o site fictício (para "baixar" o jogo) relacionado ao projeto — foram desenvolvidos de forma **100% autoral**.
 
 O objetivo do projeto é praticar conceitos de:
 - Programação com Python
