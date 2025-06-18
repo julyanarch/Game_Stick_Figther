@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0e0e0e;
+    color: #fff;
+  }
+ 
+  header {
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #6e060f;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    color: #6e060f;
+  }
+  
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #6e060f;
+  }
+  
+  .banner {
+    position: relative; 
+    text-align: center;
+    height: 400px;
+    background-color: #000; 
+    color: white;
+    overflow: hidden;
+  }
+  
+  .banner h1 {
+    position: relative;
+    z-index: 2; /* aparece acima da imagem */
+    padding-top: 20px;
+    font-size: 2.5rem;
+  }
+
+
+  .banner img {
+    position: center;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    opacity: 0.3; /* deixa a imagem transparente  */
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+  .mensagem-central {
+    text-align: center;
+    padding: 30px 20px; /* espaço vertical reduzido */
+  }
+  
+  .mensagem-central h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .container {
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .download-btn {
+    background-color: #6e060f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 3s;
+    text-transform: uppercase;
+  }
+  
+  .download-btn:hover {
+    background-color: #96494f;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  .neon-gamer {
+    color: #6e060f;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-shadow:
+      -1px -1px 0 #000,
+       1px -1px 0 #000,
+      -1px  1px 0 #000,
+       1px  1px 0 #000,
+       0 0 10px #6e060f,
+       0 0 20px #6e060f;
+  
+    animation: neon-glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon-glow {
+    from {
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+         0 0 10px #6e060f,
+         0 0 20px #6e060f;
+    }
+    to {
+      text-shadow:
+        -1px -1px 0 #000,
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+         0 0 20px #ff1a1a,
+         0 0 30px #ff1a1a,
+         0 0 40px #ff1a1a;
+    }
+  }
+
+  .personagens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .personagens-grid .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  
+  .personagens-grid .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #6e060f, 0 0 15px #6e060f inset;
+  }
+  
+  .personagens-grid .card img {
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+  }
+  
+  .personagens-grid .card:hover img {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    nav {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .banner h1 {
+      font-size: 1.5rem;
+      padding-top: 60px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    .description {
+      font-size: 1em;
+      text-align: justify;
+    }
+  
+    .personagens-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .personagens-grid .card {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .download-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      text-align: center;
+    }
+  }
+  
+  
