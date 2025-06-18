@@ -39,6 +39,6 @@ python game.py
 📜 Este projeto foi desenvolvido exclusivamente para fins acadêmicos, sem fins comerciais. Todos os assets
  (imagens, personagens e sites) são criações autorais, com exceção cenário (imagem capturada da web)
 
-📜 Projeto desenvolvido por estudantes do 1º semestre de Análise e Desenvolvimento de Sistemas (ADS) — SENAI Leopoldina — 2025.
+📜 Projeto desenvolvido por estudantes de 1º semestre de Análise e Desenvolvimento de Sistemas (ADS) — SENAI Leopoldina — 2025.
 
 
